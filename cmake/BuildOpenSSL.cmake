@@ -167,7 +167,7 @@ else()
     
     # add openssl target
     ExternalProject_Add(openssl
-        URL https://mirror.viaduck.org/openssl/openssl-${OPENSSL_BUILD_VERSION}.tar.gz
+        URL ${OPEN_SSL_URL_HOST}
         ${OPENSSL_CHECK_HASH}
         UPDATE_COMMAND ""
 
